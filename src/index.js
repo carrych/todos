@@ -6,7 +6,7 @@ import {BrowserRouter as Router} from "react-router-dom";
 
 import App from "./views/layouts/app";
 
-import store from "./store/store";
+import store from "./store";
 
 ReactDOM.render(
     <Provider store={store}>

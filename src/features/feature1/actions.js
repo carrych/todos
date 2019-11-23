@@ -1,4 +1,4 @@
-import * as types from "./types";
+import * as types from "./ationTypes";
 
 export const add = ( product ) => ( {
     type: types.ADD,

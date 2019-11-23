@@ -1,18 +1,18 @@
-import * as types from "./types";
+import * as actionTypes from "./ationTypes";
 
 const initialState = {
   products: []
 };
 
-export const updateStore = (state = initialState, {type, payload}) => {
+export const reducer = (state = initialState, {type, payload}) => {
 
     switch (type) {
-        case types.ADD:
+        case actionTypes.ADD:
             return {
                 ...state,
                 ...payload
             };
-        case types.SET:
+        case actionTypes.SET:
             return {
                 ...state,
                 ...payload
@@ -23,4 +23,4 @@ export const updateStore = (state = initialState, {type, payload}) => {
     }
 };
 
-export default updateStore;
+export default reducer;
